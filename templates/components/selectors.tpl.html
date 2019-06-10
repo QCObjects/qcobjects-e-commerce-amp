@@ -1,0 +1,21 @@
+<div class="md-commerce-header relative md-flex flex-wrap items-center md-mx0 md-mb2">
+  <h1 class="h3 mb2 md-mt2 md-mb2 md-ml0 flex-auto px2">Products</h1>
+  <div class="commerce-listing-filters pt2 pb2 mb3 md-mb0">
+<div class="commerce-select-wrapper inline-block md-mr1 pl2 md-hide lg-hide">
+<label for="categories" class="bold caps h6 md-h7">Show:</label>
+<select name="categories" id="categories" class="commerce-select h6 md-h7" on="change: AMP.setState({products: {category: event.value}})">
+<option value="all">all</option>
+<option value="bikes">bikes</option>
+<option value="accessories">accessories</option>
+<option value="components">components</option>
+</select>
+</div>
+<div class="commerce-select-wrapper inline-block  ">
+<label for="price" class="bold caps h6 md-h7">Sort by:</label>
+<select name="price" id="price" class="commerce-select h6 md-h7" on="change: AMP.setState({products: {filter: event.value}})">
+<option value="high-low">Price: High-Low</option>
+<option value="low-high">Price: Low-High</option>
+</select>
+</div>
+  </div>
+</div>
